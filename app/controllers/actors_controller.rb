@@ -10,6 +10,7 @@ class ActorsController < ApplicationController
   # GET /actors/1
   # GET /actors/1.json
   def show
+      @actors = actors.all
   end
 
   # GET /actors/new
@@ -71,4 +72,5 @@ class ActorsController < ApplicationController
     def actor_params
       params.require(:actor).permit( :name, :year_of_birth, :thumbnail)
     end
+
 end
