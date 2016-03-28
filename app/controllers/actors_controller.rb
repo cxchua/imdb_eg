@@ -21,6 +21,9 @@ class ActorsController < ApplicationController
   def edit
   end
 
+  def destroy2
+  end
+
   # POST /actors
   # POST /actors.json
   def create
